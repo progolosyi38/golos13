@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#005BFF">
+  <title>Ozon — голосование</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      min-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: #F0F2F5;
+      color: #1A1A1A;
+    }
+
+    /* Шапка Ozon */
+    .header {
+      background: linear-gradient(135deg, #005BFF 0%, #0047CC 100%);
+      color: #fff;
+      text-align: center;
+      padding: 28px 20px 40px;
+      position: relative;
+      overflow: hidden;
+    }
+    .header::before {
+      content: "";
+      position: absolute;
+      top: -50px; right: -30px;
+      width: 160px; height: 160px;
+      background: rgba(255,255,255,.08);
+      border-radius: 50%;
+    }
+    .header::after {
+      content: "";
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 20px;
+      background: #F0F2F5;
+      border-radius: 20px 20px 0 0;
+    }
+    .header .logo {
+      display: inline-block;
+      background: rgba(255,255,255,.2);
+      padding: 8px 18px;
+      border-radius: 10px;
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 16px;
+    }
+    .header h1 {
+      font-size: 26px;
+      font-weight: 800;
+      letter-spacing: -0.4px;
+      line-height: 1.25;
+      margin-bottom: 6px;
+    }
+    .header p {
+      font-size: 15px;
+      opacity: .9;
+      font-weight: 500;
+    }
+
+    /* Карточка */
+    .wrap {
+      max-width: 420px;
+      margin: 0 auto;
+      padding: 4px 16px 40px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 8px 32px rgba(0,91,255,.12);
+      padding: 36px 28px 32px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .card::before {
+      content: "";
+      position: absolute;
+      top: -40px; right: -40px;
+      width: 120px; height: 120px;
+      background: radial-gradient(circle, rgba(0,91,255,.08), transparent 70%);
+      border-radius: 50%;
+    }
+
+    .gift-icon {
+      font-size: 52px;
+      margin-bottom: 16px;
+      line-height: 1;
+      filter: drop-shadow(0 4px 8px rgba(0,91,255,.2));
+    }
+
+    .card h2 {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1.4;
+      color: #1A1A1A;
+      margin-bottom: 10px;
+    }
+    .card h2 span {
+      color: #005BFF;
+    }
+
+    .card .sub {
+      font-size: 15px;
+      color: #666;
+      line-height: 1.45;
+      margin-bottom: 28px;
+    }
+
+    .cta {
+      display: block;
+      width: 100%;
+      padding: 16px 20px;
+      background: linear-gradient(180deg, #2B7AFF, #005BFF);
+      color: #fff;
+      font-size: 18px;
+      font-weight: 700;
+      text-decoration: none;
+      border-radius: 12px;
+      box-shadow: 0 5px 0 #0047CC, 0 10px 22px rgba(0,91,255,.35);
+      transition: transform .12s, box-shadow .12s;
+    }
+    .cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 7px 0 #0047CC, 0 14px 26px rgba(0,91,255,.4);
+    }
+    .cta:active {
+      transform: translateY(3px);
+      box-shadow: 0 2px 0 #0047CC, 0 4px 10px rgba(0,91,255,.25);
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">Ozon</div>
+    <h1>Голосование</h1>
+    <p>Выберите своего фаворита</p>
+  </header>
+
+  <div class="wrap">
+    <div class="card">
+      <div class="gift-icon">🎁</div>
+      <h2>Проголосуй за <span>Ozon</span><br>и получи подарок</h2>
+      <p class="sub">Ozon дарит подарок каждому,<br>кто поддержит нас голосом</p>
+      <a class="cta" href="https://www.ozon.ru/" rel="nofollow sponsored">Проголосовать</a>
+    </div>
+  </div>
+</body>
+</html>
